@@ -1,48 +1,50 @@
 #!/usr/bin/python3
 """
-This is a script to convert a Markdown file to HTML.
+This is a script to convert a Markdown file to HTML using mistletoe library.
 
 Usage:
-    ./markdown2html.py [input_file] [output_file]
+  ./markdown2html.py [input_file] [output_file]
 
 Arguments:
-    input_file: the name of the Markdown file to be converted
-    output_file: the name of the output HTML file
+  input_file: the name of the Markdown file to be converted
+  output_file: the name of the output HTML file
 
 Example:
-    ./markdown2html.py README.md README.html
+  ./markdown2html.py README.md README.html
 """
 
-import argparse
+import mistletoe
+from mistletoe import HTMLRenderer, InlineRenderer, BlockRenderer
+from mistletoe.walkers import MarkdownWalker
 import pathlib
-import re
+import sys
+
+
+class MyHTMLRenderer(HTMLRenderer):
+    def heading(self, element):
+        h_level = len(element.children[0].children)
+        return f'<h{h_level}>{self.render(element.children)}</h{h_level}>'
 
 
 def convert_md_to_html(input_file, output_file):
-    '''
-    Converts markdown file to HTML file
-    '''
+    """
+    Converts markdown file to HTML file using mistletoe library
+    """
     # Read the contents of the input file
     with open(input_file, encoding='utf-8') as f:
-        md_content = f.readlines()
+        md_content = f.read()
 
-    html_content = []
-    for line in md_content:
-        # Check if the line is a heading
-        match = re.match(r'(#){1,6} (.*)', line)
-        if match:
-            # Get the level of the heading
-            h_level = len(match.group(1))
-            # Get the content of the heading
-            h_content = match.group(2)
-            # Append the HTML equivalent of the heading
-            html_content.append(f'<h{h_level}>{h_content}</h{h_level}>\n')
-        else:
-            html_content.append(line)
+    # Create a Markdown document
+    md = mistletoe.markdown(md_content)
+
+    # Render the Markdown document to HTML
+    renderer = MyHTMLRenderer()
+    walker = MarkdownWalker(md)
+    html_content = walker.walk(renderer)
 
     # Write the HTML content to the output file
     with open(output_file, 'w', encoding='utf-8') as f:
-        f.writelines(html_content)
+        f.write(html_content)
 
 
 if __name__ == '__main__':
@@ -60,5 +62,4 @@ if __name__ == '__main__':
 
     # Convert the markdown file to HTML
     convert_md_to_html(args.input_file, args.output_file)
-
 
