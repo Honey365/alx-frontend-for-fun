@@ -1,119 +1,61 @@
-Forms
-HTML
-CSS
-Front-end
- Weight: 1
- Project will start Jul 22, 2024 6:00 AM, must end by Jul 29, 2024 6:00 AM
- Checker was released at Jul 24, 2024 12:00 AM
- An auto review will be launched at the deadline
+# Forms
 
+## Description:bulb:
+How to build an HTML5 form and style it
 
-Resources
+* How to create an HTML5 form
+* How to choose the right input type
+* How to constrain a form field with regular expressions
+* How to style inputs for invalid, valid, and required fields
+* How to build a coment form
+* How to build a simple search form
+* How to create usable and accessible forms
+
+---
+
+## Resources:books:
 Read or watch:
+* [An Extensive Guide To Web Form Usability - Smashing Magazine] (https://intranet.hbtn.io/rltoken/L7JpxWt0F5VsUtwsDGaJYg)
+* [Forms - UX Movement] (https://intranet.hbtn.io/rltoken/FaOz7GkGRSnrlYKL91sWYQ)
+* [Placeholders in Form Fields are Harmful] (https://intranet.hbtn.io/rltoken/kkI4hp8L2xriaBiZ4aay5g)
+* [The Anatomy of Accessible Forms: Best Practices | Deque] (https://intranet.hbtn.io/rltoken/Suk4Imd1PwQWQfMARmUyOg)
+* [Pure CSS Custom Error Messaging for Default Form Elements - Sarah Holley Design] (https://intranet.hbtn.io/rltoken/mt7GbkQzlwq86rGgLXuKug)
+* [HTML forms - Learn web development | MDN] (https://intranet.hbtn.io/rltoken/FqmevqAf9FQJTCLzWHkR1g)
+* [form - HTML: Hypertext Markup Language | MDN] (https://intranet.hbtn.io/rltoken/SSy7rj0I3adIOAdQYHZlTg)
+* [fieldset: The Field Set element - HTML: Hypertext Markup Language | MDN] (https://intranet.hbtn.io/rltoken/Dei_L42fLRZU_AJ6ZrEHYQ)
+* [legend | MDN] (https://intranet.hbtn.io/rltoken/ZkZo0GMrr0swRR5qOAbZpA)
+* [label | MDN] (https://intranet.hbtn.io/rltoken/riHRpJYmDTPKnhEnmim8Og)
+* [input: The input element | MDN] (https://intranet.hbtn.io/rltoken/I-tvtRp2hlUSVkdNVuOkzQ)
+* [tabindex | MDN] (https://intranet.hbtn.io/rltoken/IVNFtpOTz5HH2hhPVirm1w)
+* [accesskey | MDN] (https://intranet.hbtn.io/rltoken/hpkb0GWg6d58CT3VbJBYUA)
+* [button: The Button element | MDN] (https://intranet.hbtn.io/rltoken/lWIyMaHK4ZXYyIftpFkydQ)
+* [select | MDN] (https://intranet.hbtn.io/rltoken/yW_Ov-o5Z5-WHRqOH1yrWQ)
+* [optgroup | MDN] (https://intranet.hbtn.io/rltoken/fd435kOSi_vDQuxS9C_hzQ)
+* [datalist | MDN] (https://intranet.hbtn.io/rltoken/9zHNcNs_TijZGoXlSPE6UQ)
+* [textarea | MDN] (https://intranet.hbtn.io/rltoken/ZI43Ei3OIRGmi0fdEm-Wfg)
+* [Form validation UX in HTML and CSS | CSS-Tricks] (https://intranet.hbtn.io/rltoken/Wbg54wi7RUJX2_y7hrw6dQ)
+* [Constraint validation - Developer guides | MDN] (https://intranet.hbtn.io/rltoken/aS9wOqiKFbqnoWXUIdgbcg)
+* [:invalid - CSS: Cascading Style Sheets | MDN] (https://intranet.hbtn.io/rltoken/7h8uLLpM8WxMQS7t6aAk7Q)
+* [:valid - CSS: Cascading Style Sheets | MDN] (https://intranet.hbtn.io/rltoken/UKXa7S-Q_saLWXgrJeFRNg)
+* [:optional - CSS: Cascading Style Sheets | MDN] (https://intranet.hbtn.io/rltoken/Yw2FK8PGHmv5jgF8BOKJ9w)
 
-An Extensive Guide To Web Form Usability — Smashing Magazine
-Forms - UX Movement
-Placeholders in Form Fields are Harmful (Video)
-The Anatomy of Accessible Forms: Best Practices | Deque
-Pure CSS Custom Error Messaging for Default Form Elements – Sarah Holley Design
-MDN resources:
+---
 
-HTML forms - Learn web development | MDN
-form - HTML: Hypertext Markup Language | MDN
-fieldset: The Field Set element - HTML: Hypertext Markup Language | MDN
-legend - HTML: Hypertext Markup Language | MDN
-label - HTML: Hypertext Markup Language | MDN
-input: The Input (Form Input) element - HTML: Hypertext Markup Language | MDN
-tabindex - HTML: Hypertext Markup Language | MDN
-accesskey - HTML: Hypertext Markup Language | MDN
-button: The Button element - HTML: Hypertext Markup Language | MDN
-select - HTML: Hypertext Markup Language | MDN
-optgroup - HTML: Hypertext Markup Language | MDN
-datalist - HTML: Hypertext Markup Language | MDN
-textarea - HTML: Hypertext Markup Language | MDN
-Form Validation UX in HTML and CSS | CSS-Tricks
-Constraint validation - Developer guides | MDN
-:invalid - CSS: Cascading Style Sheets | MDN
-:valid - CSS: Cascading Style Sheets | MDN
-:optional - CSS: Cascading Style Sheets | MDN
-Learning objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+### [0. basic comment structure](./01-article.html)
 
-How to create an HTML5 form
-How to choose the right input type
-How to constrain a form field with regular expressions
-How to style inputs for invalid, valid, and required fields
-How to build a a comment form
-How to build a simple search form
-How to create usable and accessible forms
-Requirements
-Allowed editors: vi, vim, emacs
-A README.md at the root of the project directory is mandatory
-HTML and CSS have been rendered on Chrome 78 or more.
-Quiz questions
-Great! You've completed the quiz successfully! Keep going! (Hide quiz)
-Question #0
-In this code:
+### [1. more comment basic structure](./02-article.html)
 
-<input type="checkbox" name="online" id="online" />
-<label for="online">Online</label>
-Why for="online" in the <label> is important?
+### [2. create labels and input container](./03-styles.css)
 
+### [3. create the inputs](./04-article.html)
 
-To set a default value to the checkbox
+### [4. add help messages](./05-article.html)
 
+### [5. add pure HTML / CSS error handling](./06-styles.css)
 
-To extend the “click zone” and toggle the <input id="online">
+### [6. add the search form](./07-article.html)
 
+---
 
-To display the label on the left of the checkbox
-
-
-To indicate to the user that “Online” is a boolean
-
-Question #1
-What’s the purpose of <label>?
-
-
-Indicate to the browser how to auto-complete
-
-
-Indicate to the form what’s the POST variable name
-
-
-Indicate to the user what’s the input field is corresponding
-
-
-Keep your HTML code organized
-
-Question #2
-Which attribute can be added to an <input> to make it mandatory in the form?
-
-
-required
-
-
-enable
-
-
-onClick
-
-
-mandatory
-
-Question #3
-Which pseudo-class can be define to change the style of an <input> when the validation failed?
-
-
-:required
-
-
-:invalid
-
-
-:no
-
-
-:form-valid
-
-Tasks
+## Author
+* **Joseph Mahiuha** - [Mahiuha](https://github.com/Mahiuha)
